@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of Morty hosts
+summary: >-
+  Probed the standard /.well-known/ discovery surface on morty.com, www.morty.com,
+  platform.morty.com, and api.morty.com. No security.txt, OIDC/OAuth
+  authorization-server metadata, api-catalog, or ai-plugin manifest is published
+  (all 404). A real /llms.txt IS served (captured separately in llms/). Recorded
+  as an honest negative — absence is valid data; no WellKnown pointer emitted.
+hosts:
+  - host: https://www.morty.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+      - path: /.well-known/api-catalog
+        status: 404
+      - path: /.well-known/ai-plugin.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        note: minimal LLM-preferences file (Allow / + sitemap)
+  - host: https://platform.morty.com
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+      - path: /openapi.json
+        status: 404
+      - path: /llms.txt
+        status: 200
+        file: ../llms/morty-llms.txt
+        note: real AIOSEO-generated llms.txt page index (captured verbatim)
+  - host: https://api.morty.com
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 404
+      - path: /openapi.json
+        status: 404
+      - path: /
+        status: 404
+        note: host resolves but serves no public API surface / spec

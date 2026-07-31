@@ -1,0 +1,52 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.morty.com/solutions/adding-mortgage-to-startup
+sources:
+  - https://www.morty.com/solutions/adding-mortgage-to-startup
+  - https://www.morty.com/resources/morty-plus-embeddable-rate-table
+summary: >-
+  Morty ships embeddable, "plug-and-play" mortgage infrastructure that partners
+  embed inside their own product. Access is partner-gated: an API key for the
+  embeddable mortgage widgets is provisioned via Contact Sales
+  (https://platform.morty.com/contact-sales/). One surface — the Morty+
+  Embeddable Rate Table — is documented as a low-code embed ("two lines of
+  code"). No public component loader library or npm/CDN package was found; the
+  widgets are provisioned per partnership.
+components:
+  - family: Embeddable Rate Table (Morty+)
+    description: >-
+      Embeddable rate table that surfaces real-time mortgage rates, accurate
+      closing-cost estimates, and multi-scenario exploration inside a partner
+      site. Documented as a low-code embed ("two lines of code"). Configurable:
+      monetization routing (direct to your product or affiliate/Morty
+      marketplace), pricing source (Morty marketplace pricing or your own lender
+      partners), and closing costs (Morty's proprietary calc or specialized
+      costs). Pairs with a Pre-Qualification embed for saved rates + lead
+      capture. Exact embed snippet (iframe vs. script) is not published on the
+      public page.
+    surface: embedded-widget
+    embed: two-lines-of-code
+    evidence: "Morty+ Embeddable Rate Table — 'two lines of code' integration (morty-plus-embeddable-rate-table)"
+  - family: Embeddable Mortgage Widgets
+    description: >-
+      Embeddable mortgage widgets that surface real-time pricing, eligibility,
+      and lender overlays inside a partner product. Provisioned with a Morty API
+      key via Contact Sales.
+    surface: embedded-widget
+    evidence: "Get your API key for Morty's embeddable mortgage widgets (contact-sales page)"
+  - family: Pricing Engine (PPE)
+    description: >-
+      Product & Pricing Engine surfaced in real time ("0 sec PPE response time")
+      exposing real-time pricing, eligibility, and overlays via API for embedding.
+    surface: embedded / api
+    evidence: "Real-time pricing, eligibility, and overlays via API (adding-mortgage-to-startup)"
+  - family: Point-of-Sale (POS)
+    description: >-
+      Embeddable point-of-sale / borrower application experience, part of the
+      modular "ready to embed" mortgage infrastructure.
+    surface: embedded
+    evidence: "Modular mortgage infrastructure, ready to embed — pricing engine, LOS, POS, compliance, fulfillment"
+notes: >-
+  Distinct from server-side SDKs (none published publicly). These are hosted /
+  embedded product surfaces offered to partners under a bespoke partnership +
+  API key.

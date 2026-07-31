@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://platform.morty.com/contact-sales/
+summary:
+  types: [apiKey]
+  api_key_in: [unknown]
+  oauth2_flows: []
+  public_spec: false
+  access: partner-gated
+schemes:
+  - name: apiKey
+    type: apiKey
+    description: >-
+      Morty provisions an API key for its embeddable mortgage widgets / Product &
+      Pricing Engine. The key is issued through Contact Sales as part of a
+      partnership ("Get your API key for Morty's embeddable mortgage widgets").
+      No public OpenAPI, developer portal, or auth reference documents the key
+      placement (header vs. query), so `in`/parameter name are unknown.
+    sources: [https://platform.morty.com/contact-sales/]
+notes: >-
+  Authentication details are behind a partner onboarding / Contact Sales flow;
+  Morty publishes no public API reference. Recorded from the documented fact that
+  API keys are issued for the embeddable widgets and PPE-over-API surface.

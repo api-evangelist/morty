@@ -1,0 +1,53 @@
+generated: '2026-07-20'
+method: searched
+source: https://www.morty.com/platform-updates
+summary: >-
+  Morty publishes a public, dated "Platform Updates" changelog covering its
+  mortgage platform (Hemlock/Elroy apps, Rosey AI, Product & Pricing Engine) and
+  its lender network. This is a product/platform release feed, not an API
+  changelog — Morty ships no public, versioned OpenAPI, so there is no API
+  version scheme to record. Recent entries captured verbatim from the page
+  (window: newest ~7 entries; the feed runs back to April 2024).
+scheme: dated-entries
+current_version: null
+changelog_url: https://www.morty.com/platform-updates
+entries:
+  - date: '2026-01-15'
+    title: Brand Studio
+    highlights: New marketing workspace with landing pages, brand management, and social analytics.
+    breaking: false
+    additions: true
+  - date: '2026-01-15'
+    title: New Navigation in Hemlock
+    highlights: Updated navigation with side/top menus and refined dashboard layouts.
+    breaking: false
+    additions: true
+  - date: '2026-01-13'
+    title: Soft Credit Pulls for Refinance
+    highlights: Certain refinance types now support soft credit pulls instead of hard pulls.
+    breaking: false
+    additions: true
+  - date: '2026-01-07'
+    title: REO & Lease Editing in Hemlock
+    highlights: Loan officers can edit property details directly in the platform.
+    breaking: false
+    additions: true
+  - date: '2025-12-09'
+    title: OakTree Funding Corp Addition
+    highlights: New lender partner offering Non-QM and specialized loan products.
+    breaking: false
+    additions: true
+  - date: '2025-12-09'
+    title: VA Fannie Findings Support
+    highlights: Extended Fannie Findings capability to VA loans.
+    breaking: false
+    additions: true
+  - date: '2025-12-04'
+    title: Normandy Lender Network Addition
+    highlights: New lender specializing in construction and land loans.
+    breaking: false
+    additions: true
+notes: >-
+  A product/platform changelog, not an API changelog. Captured because Morty
+  maintains a genuine dated release feed; there is no public API version stream
+  to structure since the API is partner-gated with no public spec.
